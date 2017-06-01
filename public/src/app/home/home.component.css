@@ -1,0 +1,106 @@
+#buglogo {
+  margin-top: -15px;
+}
+
+#caro-image {
+  height: 400px;
+}
+
+body {
+  background-color: black;
+}
+
+.well {
+  background-color: black;
+  color: white;
+  margin-bottom: 0px;
+  border-style: none;
+}
+
+#contact {
+  background-color: black;
+  color: white;
+}
+
+#about {
+  color: white;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+footer {
+  background-color: black;
+}
+
+/*navbarcss*/
+.navbar-default {
+  background-color: #000000;
+  border-color: #9b060e;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ce4f56;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ce4f56;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ce4f56;
+  background-color: #9b060e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ce4f56;
+  background-color: #9b060e;
+}
+.navbar-default .navbar-toggle {
+  border-color: #9b060e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #9b060e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ce4f56;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ce4f56;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ce4f56;
+    background-color: #9b060e;
+  }
+}

@@ -1,0 +1,164 @@
+<body>
+
+<!-- navbar start -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<a href="" class="navbar-brand"><img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10898054_771337062947695_21052302371598509_n.png?oh=1d3f72f13b8fb6d3d51de5867b657094&oe=59A1E1AD" alt="Brand" style="width:50px;height:50px;" id="buglogo"></a>
+		</div><!-- Navbar header -->
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+
+
+			<ul class="nav navbar-nav">
+				<li><a href="#about">About</a></li>
+				<li><a [routerLink]="['/menu']">Menu</a></li>
+				<li><a href="#contactus">Contact Us</a></li>
+      </ul>
+		</div>
+	</div> <!-- End of container -->
+</nav> <!-- Navbar End -->
+<section>
+  <div class="well well-lg">
+	<div class="container">
+		<section>
+			<div class="page-header" id="carousel">
+				<h2>Welcome To Ramen Taka!<small> Homemade Tonkotsu Ramen!</small></h2>
+			</div>
+
+			<div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="1" ></li>
+					<li data-target="#screenshot-carousel" data-slide-to="2" ></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="https://s3-media4.fl.yelpcdn.com/bphoto/T96a_P2t2fWPTu9BYqGzFw/o.jpg" alt="Fried Rice" id="caro-img">
+						<div class="carousel-caption">
+							<h3>Teppan Fried Rice</h3>
+							<p>Fried rice served on a hote plate</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="https://s3-media4.fl.yelpcdn.com/bphoto/939BTn3TeByqZFa3p3ZkfA/o.jpg" alt="Gyoza" id="caro-img">
+						<div class="carousel-caption">
+							<h3>Gyoza</h3>
+							<p>Gyoza goes great with ramen!</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="https://s3-media1.fl.yelpcdn.com/bphoto/z13LUK0_ya7ZqE8rwg3e2Q/o.jpg" alt="Text of image" id="caro-img">
+						<div class="carousel-caption">
+							<h3>Taka Ramen</h3>
+							<p>Homemade Tonkotsu Broth</p>
+						</div>
+					</div>
+
+				</div><!-- end of carousel inner-->
+				<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div> <!-- end carousel -->
+<hr>
+		</section>
+	</div>
+  </div>
+</section><!-- end carousel section-->
+
+<div class="container" id="about">
+      <section>
+        <div class="page-header" id="reasons">
+          <h2>About Ramen Taka</h2>
+        </div> <!-- End of page header -->
+        <div class="row">
+  				<div class="col-md-4">
+  					<p>Great tasting tonkotsu ramen made fresh in Santa Clara, California!</p>
+
+          <h5>Store Hours</h5>
+          <p>11:30 am - 2:00 pm, 5:30 pm - 9:00 pm <br>
+          (Closes at 8:30pm on Sunday)</p>
+
+          <h5>Address</h5>
+          <p>2219 The Alameda <br>
+          Santa Clara, CA 95050</p>
+
+          <h5>Phone Number</h5>
+          <p>(408) 564-4467</p>
+  				</div>
+          <div class="col-md-7 col-md-offset-1">
+            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ramen%20Taka&key=AIzaSyBmDegEKWM5UeApNV915hb7y_tN2625sOo" allowfullscreen></iframe>
+          </div>
+  			</div><!-- End row-->
+      </section>
+    </div> <!-- End of Reason -->
+
+<!-- Contact -->
+
+<div class="container" id="contact">
+	<div class="page-header" id="contactus">
+			<h2>Contact<small> We'd like to know what you think!</small></h2>
+		</div> <!-- end of page header -->
+
+		<div class="row">
+			<div class="col-md-4">
+				<p>Send us a message about what you think about our restaurant, food, staff, or anything else! We look forward to hearing from you!</p>
+
+			</div>
+
+			<div class="col-md-8">
+				<form action="" class="form-horizontal">
+					<div class="form-group">
+						<label for="user-name" class="col-md-2 control-label">Name</label>
+						<div class="col-md-10">
+							<input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+						</div>
+					</div><!-- End form group -->
+					<div class="form-group">
+						<label for="user-email" class="col-md-2 control-label">Email</label>
+						<div class="col-md-10">
+							<input type="text" class="form-control" id="user-email" placeholder="Enter your Email Address">
+						</div>
+					</div><!-- End form group -->
+					<div class="form-group">
+						<label for="user-message" class="col-md-2 control-label">Message</label>
+						<div class="col-md-10">
+							<textarea name="user-message" id="user-message" class="form-control" cols="20" rows="10" placeholder="Enter your message"></textarea>
+						</div>
+					</div><!-- End form group -->
+
+					<div class="form-group">
+						<div class="col-md-10 col-md-offset-2">
+							<button type="submit" class="btn btn-danger">Submit</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <div class="container text-center">
+    <ul class="list-inline">
+      <li><a href="https://www.facebook.com/pages/Taka-Ramen/291675891003880" target="_blank">Facebook</a></li>
+      <li><a href="https://www.yelp.com/biz/ramen-taka-santa-clara" target="_blank">Yelp</a></li>
+    </ul>
+
+    <p>&copy; Copyright 2017</p>
+  </div>
+</footer>
+
+</body>
