@@ -5,6 +5,7 @@
     <h3 id="welcome">Hello {{profile?.nickname }}!</h3>
     <button class="pull-right btn btn-link" id="logout"(click)="auth.logout()" *ngIf="auth.authenticated()">Logout</button>
   </div>
+</div>
   <div class="row">
     <div class="col-sm-6 col-md-4 col-md-offset-4">
       <div class="thumbnail">
@@ -12,11 +13,11 @@
         <div class="caption">
           <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
           <h3 class="nickname">{{ profile?.nickname }}</h3>
-          <p><a href="#" class="btn btn-info" role="button">Add Menu Item</a></p>
+          <p><a [routerLink]="['/create']" class="btn btn-info" role="button">Add Menu Item</a></p>
         </div>
       </div>
     </div>
   </div>
 
-</div>
+
 </body>
