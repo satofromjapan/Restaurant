@@ -5,6 +5,42 @@ webpackJsonp([1,5],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CreateComponent = (function () {
+    function CreateComponent() {
+    }
+    CreateComponent.prototype.ngOnInit = function () {
+    };
+    return CreateComponent;
+}());
+CreateComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-create',
+        template: __webpack_require__(279),
+        styles: [__webpack_require__(262)]
+    }),
+    __metadata("design:paramtypes", [])
+], CreateComponent);
+
+//# sourceMappingURL=create.component.js.map
+
+/***/ }),
+
+/***/ 101:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auth_service__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -40,7 +76,7 @@ var _a;
 
 /***/ }),
 
-/***/ 101:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84,7 +120,7 @@ var _a;
 
 /***/ }),
 
-/***/ 164:
+/***/ 165:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -93,19 +129,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 164;
+webpackEmptyContext.id = 165;
 
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(179);
 
 
@@ -119,7 +155,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 174:
+/***/ 175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -150,24 +186,24 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 175:
+/***/ 176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__http_service__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routes__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routes__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__auth_service__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__authguard_service__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__menu_menu_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__menu_menu_component__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__admin_admin_component__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__callback_callback_component__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__create_create_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__create_create_component__ = __webpack_require__(100);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -221,15 +257,15 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 176:
+/***/ 177:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_menu_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_menu_component__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__admin_admin_component__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__create_create_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__create_create_component__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__callback_callback_component__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__authguard_service__ = __webpack_require__(98);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
@@ -254,7 +290,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule 
 
 /***/ }),
 
-/***/ 177:
+/***/ 178:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -267,42 +303,6 @@ var AUTH_CONFIG = {
     SCOPE: 'openid profile'
 };
 //# sourceMappingURL=auth0-variables.js.map
-
-/***/ }),
-
-/***/ 178:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var CreateComponent = (function () {
-    function CreateComponent() {
-    }
-    CreateComponent.prototype.ngOnInit = function () {
-    };
-    return CreateComponent;
-}());
-CreateComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
-        selector: 'app-create',
-        template: __webpack_require__(279),
-        styles: [__webpack_require__(262)]
-    }),
-    __metadata("design:paramtypes", [])
-], CreateComponent);
-
-//# sourceMappingURL=create.component.js.map
 
 /***/ }),
 
@@ -434,7 +434,7 @@ module.exports = module.exports.toString();
 /***/ 276:
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\n<div class=\"panel panel-default profile-area\">\n  <div class=\"panel-heading\">\n    <h3 id=\"welcome\">Hello {{profile?.nickname }}!</h3>\n    <button class=\"pull-right btn btn-link\" id=\"logout\"(click)=\"auth.logout()\" *ngIf=\"auth.authenticated()\">Logout</button>\n  </div>\n</div>\n  <div class=\"row\">\n    <div class=\"col-sm-6 col-md-4 col-md-offset-4\">\n      <div class=\"thumbnail\">\n        <img src=\"{{profile?.picture}}\" class=\"avatar\" alt=\"avatar\">\n        <div class=\"caption\">\n          <label><i class=\"glyphicon glyphicon-user\"></i> Nickname</label>\n          <h3 class=\"nickname\">{{ profile?.nickname }}</h3>\n          <p><a [routerLink]=\"['/create']\" class=\"btn btn-info\" role=\"button\">Add Menu Item</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n</body>\n"
+module.exports = "<body>\n\n  <nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li class=\"active\"><h3>Hello {{profile?.nickname }}! </h3></li>\n\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><button class=\"pull-right btn btn-link\" id=\"logout\"(click)=\"auth.logout()\" *ngIf=\"auth.authenticated()\">Logout</button></li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n  <div class=\"row\">\n    <div class=\"col-sm-6 col-md-4 col-md-offset-4\">\n      <div class=\"thumbnail\">\n        <img src=\"{{profile?.picture}}\" class=\"avatar\" alt=\"avatar\">\n        <div class=\"caption\">\n          <label><i class=\"glyphicon glyphicon-user\"></i> Nickname</label>\n          <h3 class=\"nickname\">{{ profile?.nickname }}</h3>\n          <p><a [routerLink]=\"['/create']\" class=\"btn btn-info\" role=\"button\">Add Menu Item</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n</body>\n"
 
 /***/ }),
 
@@ -462,7 +462,7 @@ module.exports = "<div class=\"panel panel-default profile-area\">\n  <div class
 /***/ 280:
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\n<!-- navbar start -->\n<nav class=\"navbar navbar-default navbar-fixed-top\" id=\"navbar\">\n\t<div class=\"container\">\n\t\t<div class=\"navbar-header\">\n\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#navbar-collapse\">\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t</button>\n\n\t\t\t<a href=\"\" class=\"navbar-brand\"><img src=\"https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10898054_771337062947695_21052302371598509_n.png?oh=1d3f72f13b8fb6d3d51de5867b657094&oe=59A1E1AD\" alt=\"Brand\" style=\"width:50px;height:50px;\" id=\"buglogo\"></a>\n\t\t</div><!-- Navbar header -->\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n\n\n\t\t\t<ul class=\"nav navbar-nav\">\n\t\t\t\t<li><a href=\"#about\">About</a></li>\n\t\t\t\t<li><a [routerLink]=\"['/menu']\">Menu</a></li>\n\t\t\t\t<li><a href=\"#contactus\">Contact Us</a></li>\n      </ul>\n\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t\t<li><button class=\"btn btn-default\" id=\"admin\"(click)=\"authService.login()\">Admin Login</button></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div> <!-- End of container -->\n</nav> <!-- Navbar End -->\n<section>\n  <div class=\"well well-lg\">\n\t<div class=\"container\">\n\t\t<section>\n\t\t\t<div class=\"page-header\" id=\"carousel\">\n\t\t\t\t<h2>Welcome To Ramen Taka!<small> Homemade Authentic Tonkotsu Ramen!</small></h2>\n\t\t\t</div>\n\n\t\t\t<div class=\"carousel slide\" id=\"screenshot-carousel\" data-ride=\"carousel\">\n\t\t\t\t<ol class=\"carousel-indicators\">\n\t\t\t\t\t<li data-target=\"#screenshot-carousel\" data-slide-to=\"0\" class=\"active\"></li>\n\t\t\t\t\t<li data-target=\"#screenshot-carousel\" data-slide-to=\"1\" ></li>\n\t\t\t\t\t<li data-target=\"#screenshot-carousel\" data-slide-to=\"2\" ></li>\n\t\t\t\t</ol>\n\t\t\t\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t\t\t\t<div class=\"item active\">\n\t\t\t\t\t\t<img src=\"https://s3-media4.fl.yelpcdn.com/bphoto/T96a_P2t2fWPTu9BYqGzFw/o.jpg\" alt=\"Fried Rice\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Teppan Fried Rice</h3>\n\t\t\t\t\t\t\t<p>Fried rice served on a hote plate</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item\">\n\t\t\t\t\t\t<img src=\"https://s3-media4.fl.yelpcdn.com/bphoto/939BTn3TeByqZFa3p3ZkfA/o.jpg\" alt=\"Gyoza\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Gyoza</h3>\n\t\t\t\t\t\t\t<p>Gyoza goes great with ramen!</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item\">\n\t\t\t\t\t\t<img src=\"https://s3-media1.fl.yelpcdn.com/bphoto/z13LUK0_ya7ZqE8rwg3e2Q/o.jpg\" alt=\"Text of image\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Taka Ramen</h3>\n\t\t\t\t\t\t\t<p>Homemade Tonkotsu Broth</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div><!-- end of carousel inner-->\n\t\t\t\t<a href=\"#screenshot-carousel\" class=\"left carousel-control\" data-slide=\"prev\">\n\t\t\t\t\t<span class=\"glyphicon glyphicon-chevron-left\"></span>\n\t\t\t\t</a>\n\t\t\t\t<a href=\"#screenshot-carousel\" class=\"right carousel-control\" data-slide=\"next\">\n\t\t\t\t\t<span class=\"glyphicon glyphicon-chevron-right\"></span>\n\t\t\t\t</a>\n\t\t\t</div> <!-- end carousel -->\n<hr>\n\t\t</section>\n\t</div>\n  </div>\n</section><!-- end carousel section-->\n\n<div class=\"container\" id=\"about\">\n      <section>\n        <div class=\"page-header\" id=\"reasons\">\n          <h2>About Ramen Taka</h2>\n        </div> <!-- End of page header -->\n        <div class=\"row\">\n  \t\t\t\t<div class=\"col-md-4\">\n  \t\t\t\t\t<p>Great tasting tonkotsu ramen made fresh in Santa Clara, California!</p>\n\n          <h4>Store Hours</h4>\n          <p>11:30 am - 2:00 pm, 5:30 pm - 9:00 pm <br>\n          (Closes at 8:30pm on Sunday)</p>\n\n          <h4>Address</h4>\n          <p>2219 The Alameda <br>\n          Santa Clara, CA 95050</p>\n\n          <h4>Phone Number</h4>\n          <p>(408) 564-4467</p>\n  \t\t\t\t</div>\n          <div class=\"col-md-7 col-md-offset-1\">\n            <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?q=Ramen%20Taka&key=AIzaSyBmDegEKWM5UeApNV915hb7y_tN2625sOo\" allowfullscreen></iframe>\n          </div>\n  \t\t\t</div><!-- End row-->\n      </section>\n    </div> <!-- End of Reason -->\n\n<!-- Contact -->\n\n<div class=\"container\" id=\"contact\">\n\t<div class=\"page-header\" id=\"contactus\">\n\t\t\t<h2>Contact<small> We'd like to know what you think!</small></h2>\n\t\t</div> <!-- end of page header -->\n\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-4\">\n\t\t\t\t<p>Send us a message about what you think about our restaurant, food, staff, or anything else! We look forward to hearing from you!</p>\n\n\t\t\t</div>\n\n\t\t\t<div class=\"col-md-8\">\n\t\t\t\t<form action=\"\" class=\"form-horizontal\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user-name\" class=\"col-md-2 control-label\">Name</label>\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"user-name\" placeholder=\"Enter your name\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div><!-- End form group -->\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user-email\" class=\"col-md-2 control-label\">Email</label>\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"user-email\" placeholder=\"Enter your Email Address\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div><!-- End form group -->\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user-message\" class=\"col-md-2 control-label\">Message</label>\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t<textarea name=\"user-message\" id=\"user-message\" class=\"form-control\" cols=\"20\" rows=\"10\" placeholder=\"Enter your message\"></textarea>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div><!-- End form group -->\n\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<div class=\"col-md-10 col-md-offset-2\">\n\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-danger\">Submit</button>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</form>\n\t\t\t</div>\n\t\t</div>\n</div>\n\n\n<!-- Footer -->\n<footer>\n  <hr>\n  <div class=\"container text-center\">\n    <ul class=\"list-inline\">\n      <li><a href=\"https://www.facebook.com/pages/Taka-Ramen/291675891003880\" target=\"_blank\">Facebook</a></li>\n      <li><a href=\"https://www.yelp.com/biz/ramen-taka-santa-clara\" target=\"_blank\">Yelp</a></li>\n    </ul>\n\n    <p>&copy; Copyright 2017</p>\n  </div>\n</footer>\n\n</body>\n"
+module.exports = "<body>\n\n<!-- navbar start -->\n<nav class=\"navbar navbar-default navbar-fixed-top\" id=\"navbar\">\n\t<div class=\"container\">\n\t\t<div class=\"navbar-header\">\n\t\t\t<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#navbar-collapse\">\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t\t<span class=\"icon-bar\"></span>\n\t\t\t</button>\n\n\t\t\t<a href=\"\" class=\"navbar-brand\"><img src=\"https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10898054_771337062947695_21052302371598509_n.png?oh=1d3f72f13b8fb6d3d51de5867b657094&oe=59A1E1AD\" alt=\"Brand\" style=\"width:50px;height:50px;\" id=\"buglogo\"></a>\n\t\t</div><!-- Navbar header -->\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n\n\n\t\t\t<ul class=\"nav navbar-nav\">\n\t\t\t\t<li><a href=\"#about\">About</a></li>\n\t\t\t\t<li><a [routerLink]=\"['/menu']\">Menu</a></li>\n\t\t\t\t<li><a href=\"#contactus\">Contact Us</a></li>\n      </ul>\n\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t\t<li><button class=\"btn btn-default\" id=\"admin\"(click)=\"authService.login()\">Admin Login</button></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div> <!-- End of container -->\n</nav> <!-- Navbar End -->\n<section>\n  <div class=\"well well-lg\">\n\t<div class=\"container\">\n\t\t<section>\n\t\t\t<div class=\"page-header\" id=\"carousel\">\n\t\t\t\t<h2>Welcome To Ramen Taka!<small> Homemade Authentic Tonkotsu Ramen!</small></h2>\n\t\t\t</div>\n\n\t\t\t<div class=\"carousel slide\" id=\"screenshot-carousel\" data-ride=\"carousel\">\n\t\t\t\t<ol class=\"carousel-indicators\">\n\t\t\t\t\t<li data-target=\"#screenshot-carousel\" data-slide-to=\"0\" class=\"active\"></li>\n\t\t\t\t\t<li data-target=\"#screenshot-carousel\" data-slide-to=\"1\" ></li>\n\t\t\t\t\t<li data-target=\"#screenshot-carousel\" data-slide-to=\"2\" ></li>\n\t\t\t\t</ol>\n\t\t\t\t<div class=\"carousel-inner\" role=\"listbox\">\n\t\t\t\t\t<div class=\"item active\">\n\t\t\t\t\t\t<img src=\"https://s3-media3.fl.yelpcdn.com/bphoto/qEDexnF5hpScDWV6zeusVQ/o.jpg\" alt=\"Outside\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Welcome to Ramen Taka!</h3>\n\t\t\t\t\t\t\t<p>Come visit us on The Alameda nex to SCU!</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item\">\n\t\t\t\t\t\t<img src=\"https://s3-media1.fl.yelpcdn.com/bphoto/z13LUK0_ya7ZqE8rwg3e2Q/o.jpg\" alt=\"Text of image\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Taka Ramen</h3>\n\t\t\t\t\t\t\t<p>Homemade Tonkotsu Broth</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item\">\n\t\t\t\t\t\t<img src=\"https://s3-media4.fl.yelpcdn.com/bphoto/T96a_P2t2fWPTu9BYqGzFw/o.jpg\" alt=\"Fried Rice\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Teppan Fried Rice</h3>\n\t\t\t\t\t\t\t<p>Fried rice served on a hote plate</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item\">\n\t\t\t\t\t\t<img src=\"https://s3-media4.fl.yelpcdn.com/bphoto/939BTn3TeByqZFa3p3ZkfA/o.jpg\" alt=\"Gyoza\" id=\"caro-img\">\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3>Gyoza</h3>\n\t\t\t\t\t\t\t<p>Gyoza goes great with ramen!</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><!-- end of carousel inner-->\n\t\t\t\t<a href=\"#screenshot-carousel\" class=\"left carousel-control\" data-slide=\"prev\">\n\t\t\t\t\t<span class=\"glyphicon glyphicon-chevron-left\"></span>\n\t\t\t\t</a>\n\t\t\t\t<a href=\"#screenshot-carousel\" class=\"right carousel-control\" data-slide=\"next\">\n\t\t\t\t\t<span class=\"glyphicon glyphicon-chevron-right\"></span>\n\t\t\t\t</a>\n\t\t\t</div> <!-- end carousel -->\n<hr>\n\t\t</section>\n\t</div>\n  </div>\n</section><!-- end carousel section-->\n\n<div class=\"container\" id=\"about\">\n      <section>\n        <div class=\"page-header\">\n          <h2>About Ramen Taka</h2>\n        </div> <!-- End of page header -->\n        <div class=\"row\">\n  \t\t\t\t<div class=\"col-md-4\">\n  \t\t\t\t\t<p>Great tasting tonkotsu ramen made fresh in Santa Clara, California!</p>\n\n          <h4>Store Hours</h4>\n          <p>11:30 am - 2:00 pm, 5:30 pm - 9:00 pm <br>\n          (Closes at 8:30pm on Sunday)</p>\n\n          <h4>Address</h4>\n          <p>2219 The Alameda <br>\n          Santa Clara, CA 95050</p>\n\n          <h4>Phone Number</h4>\n          <p>(408) 564-4467</p>\n  \t\t\t\t</div>\n          <div class=\"col-md-7 col-md-offset-1\">\n            <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?q=Ramen%20Taka&key=AIzaSyBmDegEKWM5UeApNV915hb7y_tN2625sOo\" allowfullscreen></iframe>\n          </div>\n  \t\t\t</div><!-- End row-->\n      </section>\n    </div> <!-- End of Reason -->\n\n<!-- Contact -->\n\n<div class=\"container\" id=\"contact\">\n\t<div class=\"page-header\" id=\"contactus\">\n\t\t\t<h2>Contact<small> We'd like to know what you think!</small></h2>\n\t\t</div> <!-- end of page header -->\n\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-4\">\n\t\t\t\t<p>Send us a message about what you think about our restaurant, food, staff, or anything else! We look forward to hearing from you!</p>\n\n\t\t\t</div>\n\n\t\t\t<div class=\"col-md-8\">\n\t\t\t\t<form action=\"\" class=\"form-horizontal\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user-name\" class=\"col-md-2 control-label\">Name</label>\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"user-name\" placeholder=\"Enter your name\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div><!-- End form group -->\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user-email\" class=\"col-md-2 control-label\">Email</label>\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"user-email\" placeholder=\"Enter your Email Address\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div><!-- End form group -->\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<label for=\"user-message\" class=\"col-md-2 control-label\">Message</label>\n\t\t\t\t\t\t<div class=\"col-md-10\">\n\t\t\t\t\t\t\t<textarea name=\"user-message\" id=\"user-message\" class=\"form-control\" cols=\"20\" rows=\"10\" placeholder=\"Enter your message\"></textarea>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div><!-- End form group -->\n\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<div class=\"col-md-10 col-md-offset-2\">\n\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-danger\">Submit</button>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</form>\n\t\t\t</div>\n\t\t</div>\n</div>\n\n\n<!-- Footer -->\n<footer>\n  <hr>\n  <div class=\"container text-center\">\n    <ul class=\"list-inline\">\n      <li><a href=\"https://www.facebook.com/pages/Taka-Ramen/291675891003880\" target=\"_blank\">Facebook</a></li>\n      <li><a href=\"https://www.yelp.com/biz/ramen-taka-santa-clara\" target=\"_blank\">Yelp</a></li>\n    </ul>\n\n    <p>&copy; Copyright 2017</p>\n  </div>\n</footer>\n\n</body>\n"
 
 /***/ }),
 
@@ -479,7 +479,7 @@ module.exports = "<body>\n\n<!-- navbar start -->\n<nav class=\"navbar navbar-de
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth0_variables__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth0_variables__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_auth0_js__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_auth0_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_auth0_js__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
@@ -578,7 +578,7 @@ var _a;
 /***/ 557:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(165);
+module.exports = __webpack_require__(166);
 
 
 /***/ }),
