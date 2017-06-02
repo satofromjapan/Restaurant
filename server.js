@@ -22,7 +22,7 @@ const authCheck = jwt({
         jwksUri: "https://shrutha.auth0.com/.well-known/jwks.json"
     }),
     // This is the identifier we set when we created the API
-    audience: 'daily-deals-api',
+     audience: 'ramen-taka-api',
     issuer: "https://shrutha.auth0.com/",
     algorithms: ['RS256']
 });
@@ -44,11 +44,9 @@ var MenuSchema = new mongoose.Schema({
 }, {timestamps: true});
 
 var UserSchema = new mongoose.Schema({
-  first_name: {type: String, required: true, minlength: 2},
-  last_name: {type: String, required: true, minlength: 10},
-  email: {type: Number, required: true, minlength: 2},
+  name: {type: String, required: true, minlength: 2},
   _menu:{type: Schema.Types.ObjectId, ref: 'Menu'},
-}, {timestamps: true});
+});
 
 var User = mongoose.model('User', UserSchema);
 var Menu = mongoose.model('Menu', MenuSchema);
@@ -69,6 +67,19 @@ app.get('/menu/:category', function(req, res){
     res.json(menu);
   })
 })
+
+//get admin users
+app.get('/users', function(req, res){
+  User.find({}, function (err, users){
+    if(err){
+      res.json({message:"error",error:err});
+    }
+    else{
+      res.json({message:"success",users:users});
+    }
+    
+  });//find ends
+});//get ends
 
 //create new menu
 // app.post('/newmenu', function(req, res){

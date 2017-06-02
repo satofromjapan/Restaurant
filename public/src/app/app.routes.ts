@@ -2,12 +2,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { AdminComponent } from './admin/admin.component';
+import { CallbackComponent } from './callback/callback.component';
+
+import { AuthguardService } from './authguard.service';
 
 const APP_ROUTES: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', redirectTo: '/home',
+    pathMatch: 'full' },
     { path: 'menu', component: MenuComponent },
     { path: 'home', component: HomeComponent },
-    // { path: 'show/:id', component: ShowComponent },
+    {path: 'callback', component: CallbackComponent},
+    {path: 'admin', component: AdminComponent, canActivate: [AuthguardService] },
 ];
 
 

@@ -21,6 +21,10 @@
 				<li><a [routerLink]="['/menu']">Menu</a></li>
 				<li><a href="#contactus">Contact Us</a></li>
       </ul>
+
+			<ul class="nav navbar-nav pull-right">
+				<li><button  (click)="authService.login()">Admin Login</button></li>
+			</ul>
 		</div>
 	</div> <!-- End of container -->
 </nav> <!-- Navbar End -->
@@ -84,15 +88,15 @@
   				<div class="col-md-4">
   					<p>Great tasting tonkotsu ramen made fresh in Santa Clara, California!</p>
 
-          <h5>Store Hours</h5>
+          <h4>Store Hours</h4>
           <p>11:30 am - 2:00 pm, 5:30 pm - 9:00 pm <br>
           (Closes at 8:30pm on Sunday)</p>
 
-          <h5>Address</h5>
+          <h4>Address</h4>
           <p>2219 The Alameda <br>
           Santa Clara, CA 95050</p>
 
-          <h5>Phone Number</h5>
+          <h4>Phone Number</h4>
           <p>(408) 564-4467</p>
   				</div>
           <div class="col-md-7 col-md-offset-1">

@@ -10,6 +10,9 @@ body {
   background-color: black;
 }
 
+h4 {
+  text-decoration: underline;
+}
 .well {
   background-color: black;
   color: white;
