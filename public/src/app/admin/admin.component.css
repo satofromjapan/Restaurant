@@ -1,5 +1,10 @@
-body {
-  background-color: black;
+#welcome {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#logout {
+  margin-top: 17px;
 }
  img {
    width: 200px;

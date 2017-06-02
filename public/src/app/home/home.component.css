@@ -13,6 +13,14 @@ body {
 h4 {
   text-decoration: underline;
 }
+
+#admin {
+  color: white;
+  background-color: black;
+  border-color: #9b060e;
+  margin-top: 8px;
+}
+
 .well {
   background-color: black;
   color: white;
