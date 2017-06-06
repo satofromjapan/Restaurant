@@ -41,23 +41,28 @@ var MenuSchema = new mongoose.Schema({
   category: {type: String, required: true},
   createdBy: {type: Schema.Types.ObjectId, ref: 'User'},
   updatedBy: {type: Schema.Types.ObjectId, ref: 'User'}
-}, {timestamps: true});
+}, {timestamps: true});//one - one relation
 
 var UserSchema = new mongoose.Schema({
-  name: {type: String, required: true, minlength: 2},
+  user_sub: {type: String, required: true},
   _menu:{type: Schema.Types.ObjectId, ref: 'Menu'},
-});
+});//one -one
 
 var User = mongoose.model('User', UserSchema);
 var Menu = mongoose.model('Menu', MenuSchema);
 
 //get all products
-app.get('/allmenu', function(req, res){
-  Product.find({}, function (err, menu){
-    console.log("server log all menu items: ", menu)
-    res.json(menu);
-  })
-})
+app.get('/allmenu',function(req, res){
+ Menu.find({}, function (err, users){
+    if(err){
+      res.json({message:"error",error:err});
+    }
+    else{
+      res.json({message:"success",menu:menu});
+    }
+    
+  });//find ends
+});//get ends
 
 //get all of certain category
 app.get('/menu/:category', function(req, res){
@@ -68,18 +73,33 @@ app.get('/menu/:category', function(req, res){
   })
 })
 
-//get admin users
-app.get('/users', function(req, res){
-  User.find({}, function (err, users){
+// get admin users
+app.get('/user/:userSub', function(req, res){
+  console.log(req.params.userSub)
+  User.find({user_sub:req.params.userSub}, function (err, user){
+    console.log("The user",user)
     if(err){
       res.json({message:"error",error:err});
     }
     else{
-      res.json({message:"success",users:users});
+      res.json({message:"success",user:user});
     }
     
   });//find ends
 });//get ends
+
+app.post('/createUser',function(req, res){
+
+  User.create(req.body,function(err,output){
+   if(err){
+      res.json({message:"error",error:err});
+    }
+    else{
+      res.json({message:"success",output:output});
+    }
+  
+   });//create ends
+});//post ends
 
 //create new menu
 // app.post('/newmenu', function(req, res){
@@ -98,22 +118,7 @@ app.get('/users', function(req, res){
 //   })
 // });
 
-//create new user
-// app.post('/newuser', function(req, res){
-//   console.log("POST DATA", req.body);
-//   var newUser = new User({ <new user params go here > });
-//   console.log("NEW USER");
-//   newUser.save(function(err){
-//     if(err){
-//       console.log('error');
-//       res.json(err)
-//     }
-//     else{
-//       console.log('success');
-//       res.json('success')
-//     }
-//   })
-// });
+
 
 // //show one product
 // app.get('/product/:id', function(req, res){

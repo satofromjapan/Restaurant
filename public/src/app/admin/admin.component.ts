@@ -11,22 +11,69 @@ import { Router ,ActivatedRoute} from '@angular/router';
 export class AdminComponent implements OnInit {
 
 profile: any;
-users =null;
+user = {user_sub : ""};
+error =null;
+validuser = false;
+noPipe = null;
 
   constructor(public auth: AuthService,private _httpService: HttpService,private _router:Router,private _route: ActivatedRoute) { }
 
   ngOnInit() {
-    if (this.auth.userProfile) {
-      this.profile = this.auth.userProfile;
-      
-    } else {
+   
       this.auth.getProfile((err, profile) => {
         this.profile = profile;
+        this.noPipe= this.profile.sub.replace(/[|]/, '')
+        console.log("After replacing",this.noPipe);
+      
+        console.log("Hello")
+        this._httpService.getUser(this.noPipe)
+          .then( data => { 
+             console.log("length: ",data.user.length);
+                 if(data.user.length>0){
+                     console.log(data.user[0].user_sub);
+                      if(data.user[0].user_sub == this.noPipe){
+                         console.log(data.user);
+                         this.validuser= true;
+                        }
+                 }
+                else if (data.user.length == 0){
+                         this.error = "This page is only for admin" //not admin
+                         this._router.navigate(['/']);
+                       }
+                       
+                  // else{
+                  //     this.error = "Error in receiving data from api" //due to incorrect id
+                  //     this._router.navigate(['/']);
+                  //     }
+                   })
+        .catch( err => { console.log(err); })
+   
+   
+   
+    //     this.user.user_sub = this.noPipe;
+    //   this._httpService.createUser(this.user)
+    //  .then((data) =>{
+    //    if(data.message == "success"){
+    //      this.error =null //to reset the value from previous error
+    //     }
+    //      else {
+    //        this.error = "Unable to create a user";
+    //      } 
+       
+    //  })
+    //   .catch( err => { console.log(err); })
 
-        console.log(this.profile.nickname);
-      });
-    }
+
+        
+      });//getProfile ends
+
+      
+        
+      }//ng ends
+      
+    
   }
 
-}
+
+
 

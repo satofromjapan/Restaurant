@@ -1,6 +1,6 @@
-<body>
 
-<div class="panel panel-default profile-area">
+<div *ngIf = "validuser">
+  <div class="panel panel-default profile-area">
   <div class="panel-heading">
     <h3>Hello {{profile?.nickname }}!</h3>
     <button class="pull-right" (click)="auth.logout()" *ngIf="auth.authenticated()">Logout</button>
@@ -10,8 +10,17 @@
     <div>
       <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
       <h3 class="nickname">{{ profile?.nickname }}</h3>
+      {{ profile | json}}
     </div>
   </div>
 
 </div>
-</body>
+
+
+</div>
+
+<div *ngIf = "error" >
+  {{ error }}
+</div>
+
+

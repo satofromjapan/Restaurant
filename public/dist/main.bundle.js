@@ -289,7 +289,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: black;\n}\n img {\n   width: 200px;\n }\n", ""]);
+exports.push([module.i, "\n img {\n   width: 200px;\n }\n", ""]);
 
 // exports
 
@@ -374,7 +374,7 @@ module.exports = module.exports.toString();
 /***/ 274:
 /***/ (function(module, exports) {
 
-module.exports = "<body>\n\n<div class=\"panel panel-default profile-area\">\n  <div class=\"panel-heading\">\n    <h3>Hello {{profile?.nickname }}!</h3>\n    <button class=\"pull-right\" (click)=\"auth.logout()\" *ngIf=\"auth.authenticated()\">Logout</button>\n  </div>\n  <div class=\"panel-body\">\n    <img src=\"{{profile?.picture}}\" class=\"avatar\" alt=\"avatar\">\n    <div>\n      <label><i class=\"glyphicon glyphicon-user\"></i> Nickname</label>\n      <h3 class=\"nickname\">{{ profile?.nickname }}</h3>\n    </div>\n  </div>\n\n</div>\n</body>\n"
+module.exports = "\n<div *ngIf = \"validuser\">\n  <div class=\"panel panel-default profile-area\">\n  <div class=\"panel-heading\">\n    <h3>Hello {{profile?.nickname }}!</h3>\n    <button class=\"pull-right\" (click)=\"auth.logout()\" *ngIf=\"auth.authenticated()\">Logout</button>\n  </div>\n  <div class=\"panel-body\">\n    <img src=\"{{profile?.picture}}\" class=\"avatar\" alt=\"avatar\">\n    <div>\n      <label><i class=\"glyphicon glyphicon-user\"></i> Nickname</label>\n      <h3 class=\"nickname\">{{ profile?.nickname }}</h3>\n      {{ profile | json}}\n    </div>\n  </div>\n\n</div>\n\n\n</div>\n\n<div *ngIf = \"error\" >\n  {{ error }}\n</div>\n\n\n"
 
 /***/ }),
 
@@ -473,6 +473,7 @@ var AuthService = (function () {
         localStorage.removeItem('access_token');
         localStorage.removeItem('id_token');
         localStorage.removeItem('expires_at');
+        localStorage.clear();
         // Go back to the home route
         this.router.navigate(['/']);
     };
@@ -542,31 +543,24 @@ var HttpService = (function () {
     function HttpService(_http) {
         this._http = _http;
     }
-    // Get all menu items
-    HttpService.prototype.retrieveUsers = function () {
-        return this._http.get('/users').map(function (data) { return data.json(); }).toPromise();
-    };
     // Get all of certain category
-    HttpService.prototype.retrieveCategory = function (category) {
-        console.log("http service", category);
-        return this._http.get('/menu/' + category).map(function (data) { return data.json(); }).toPromise();
+    // retrieveCategory(category) {
+    //   console.log("http service", category)
+    //   return this._http.get('/menu/'+category).map(data=>data.json()).toPromise()
+    // }
+    // // Create a new menu item
+    // newMenu(menu, creator){
+    //   console.log('httpservice:', menu)
+    //   console.log('httpservice:',creator)
+    //   menu.createdBy = creator
+    //   return this._http.post('/newmenu/',menu).map(data=>data.json()).toPromise()
+    // }
+    HttpService.prototype.getUser = function (userSub) {
+        return this._http.get('/user/' + userSub).map(function (data) { return data.json(); }).toPromise();
     };
-    // Create a new menu item
-    HttpService.prototype.newMenu = function (menu, creator) {
-        console.log('httpservice:', menu);
-        console.log('httpservice:', creator);
-        menu.createdBy = creator;
-        return this._http.post('/newmenu/', menu).map(function (data) { return data.json(); }).toPromise();
-    };
-    // Create a new user
-    HttpService.prototype.newUser = function (user) {
-        console.log('httpservice:', user);
-        return this._http.post('/newuser/', user).map(function (data) { return data.json(); }).toPromise();
-    };
-    // edit&update a product
-    HttpService.prototype.updateMenu = function (menu, id) {
-        console.log('update menu');
-        return this._http.post('/editmenu/' + id, menu).map(function (data) { return data.json(); }).toPromise();
+    HttpService.prototype.createUser = function (user) {
+        console.log(user);
+        return this._http.post('/createUser', user).map(function (data) { return data.json(); }).toPromise();
     };
     return HttpService;
 }());
@@ -608,20 +602,51 @@ var AdminComponent = (function () {
         this._httpService = _httpService;
         this._router = _router;
         this._route = _route;
-        this.users = null;
+        this.user = { user_sub: "" };
+        this.error = null;
+        this.validuser = false;
+        this.noPipe = null;
     }
     AdminComponent.prototype.ngOnInit = function () {
         var _this = this;
-        if (this.auth.userProfile) {
-            this.profile = this.auth.userProfile;
-        }
-        else {
-            this.auth.getProfile(function (err, profile) {
-                _this.profile = profile;
-                console.log(_this.profile.nickname);
-            });
-        }
-    };
+        this.auth.getProfile(function (err, profile) {
+            _this.profile = profile;
+            _this.noPipe = _this.profile.sub.replace(/[|]/, '');
+            console.log("After replacing", _this.noPipe);
+            console.log("Hello");
+            _this._httpService.getUser(_this.noPipe)
+                .then(function (data) {
+                console.log("length: ", data.user.length);
+                if (data.user.length > 0) {
+                    console.log(data.user[0].user_sub);
+                    if (data.user[0].user_sub == _this.noPipe) {
+                        console.log(data.user);
+                        _this.validuser = true;
+                    }
+                }
+                else if (data.user.length == 0) {
+                    _this.error = "This page is only for admin"; //not admin
+                    _this._router.navigate(['/']);
+                }
+                // else{
+                //     this.error = "Error in receiving data from api" //due to incorrect id
+                //     this._router.navigate(['/']);
+                //     }
+            })
+                .catch(function (err) { console.log(err); });
+            //     this.user.user_sub = this.noPipe;
+            //   this._httpService.createUser(this.user)
+            //  .then((data) =>{
+            //    if(data.message == "success"){
+            //      this.error =null //to reset the value from previous error
+            //     }
+            //      else {
+            //        this.error = "Unable to create a user";
+            //      } 
+            //  })
+            //   .catch( err => { console.log(err); })
+        }); //getProfile ends
+    }; //ng ends
     return AdminComponent;
 }());
 AdminComponent = __decorate([
